@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.18), transparent 34rem),
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.14), transparent 32rem),
+    #f8fafc;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 34rem),
+    radial-gradient(circle at top right, rgba(129, 140, 248, 0.12), transparent 32rem),
+    #071113;
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/60 bg-white/75 shadow-xl shadow-slate-200/60 backdrop-blur-2xl dark:border-white/10 dark:bg-slate-950/65 dark:shadow-black/20;
+  }
+
+  .input {
+    @apply w-full rounded-lg border border-slate-200 bg-white/80 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 dark:border-white/10 dark:bg-slate-900/80 dark:text-white;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-teal-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-600/20 transition hover:-translate-y-0.5 hover:bg-teal-500 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white/80 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-teal-300 hover:text-teal-700 dark:border-white/10 dark:bg-slate-900/70 dark:text-slate-200 dark:hover:text-teal-300;
+  }
+}
+

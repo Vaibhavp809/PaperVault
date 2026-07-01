@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PaperVault">
+  <rect width="64" height="64" rx="14" fill="#0d9488"/>
+  <path d="M18 17h10c4.4 0 8 3.6 8 8v22c0-3.3-2.7-6-6-6H18V17Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 17H36c-4.4 0-8 3.6-8 8v22c0-3.3 2.7-6 6-6h12V17Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
