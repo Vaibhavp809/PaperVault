@@ -9,11 +9,7 @@ export const institution = {
     role: "Librarian",
     email: "librarian@mmec.edu.in",
     phone: "7676406950",
-    photoUrls: [
-      "https://mmec.edu.in/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-25-at-3.40.34-PM.jpg",
-      "https://mmec.edu.in/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-25-at-3.40.34-PM.jpeg",
-      "https://mmec.edu.in/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-25-at-3.40.34-PM.webp"
-    ]
+    photoUrls: ["/librarian-jyoti-ghugretkar.jpg"]
   },
   highlights: {
     established: "1997",
