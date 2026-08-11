@@ -1,4 +1,4 @@
-import { ExternalLink, Mail, Phone, Sparkles } from "lucide-react";
+import { ExternalLink, Lightbulb, Mail, Phone, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { institution } from "../constants/institution.js";
 
@@ -13,7 +13,7 @@ const Credits = () => {
         <p className="text-sm font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-300">Credits</p>
         <h1 className="mt-3 text-4xl font-extrabold text-slate-950 dark:text-white">Built for the MMEC Library.</h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-          PaperVault is shaped around the work of the library team at {institution.name}, helping students reach verified question papers with less friction.
+          PaperVault is shaped around the library vision at {institution.name}, helping students reach verified question papers with less friction.
         </p>
       </div>
 
@@ -47,8 +47,22 @@ const Credits = () => {
           </div>
           <h2 className="mt-6 text-2xl font-extrabold text-slate-950 dark:text-white">Acknowledgement</h2>
           <p className="mt-4 leading-7 text-slate-600 dark:text-slate-300">
-            Credits to {librarian.displayName}, Librarian at {institution.name}, for guiding the library resources that make this portal useful for students.
+            Credits to {librarian.displayName}, Librarian at {institution.name}, for the idea behind PaperVault and for guiding the library resources that make this portal useful for students.
           </p>
+
+          <div className="mt-6 rounded-lg border border-teal-200 bg-teal-50/70 p-5 dark:border-teal-500/20 dark:bg-teal-500/10">
+            <div className="flex items-start gap-3">
+              <div className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-teal-600 text-white">
+                <Lightbulb className="h-5 w-5" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-950 dark:text-white">Idea Credit</h3>
+                <p className="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  The concept of a dedicated previous-year-question-paper portal is credited to {librarian.displayName}, whose goal was to make library-held academic resources easier for students to access.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             <a className="btn-secondary justify-start" href={`mailto:${librarian.email}`}>
