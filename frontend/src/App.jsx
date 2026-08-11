@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import SearchPage from "./pages/SearchPage.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
+import Credits from "./pages/Credits.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
 import AdminDashboard from "./pages/AdminDashboard.jsx";
 import AdminUpload from "./pages/AdminUpload.jsx";
@@ -19,6 +20,7 @@ const App = () => (
       <Route path="/search" element={<SearchPage />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/credits" element={<Credits />} />
     </Route>
 
     <Route path="/admin" element={<AdminLogin />} />

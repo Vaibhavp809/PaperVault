@@ -7,7 +7,8 @@ const links = [
   { to: "/", label: "Home" },
   { to: "/search", label: "Papers" },
   { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" }
+  { to: "/contact", label: "Contact" },
+  { to: "/credits", label: "Credits" }
 ];
 
 const PublicLayout = () => {
